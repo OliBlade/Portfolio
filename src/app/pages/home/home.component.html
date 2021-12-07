@@ -1,4 +1,4 @@
-<div class="w-screen h-screen scroll-snap relative home-font" id="top-scroll" (scroll)="updateButtons($event)">
+<div class="w-screen h-screen scroll-snap relative home-font diagonal-stripe" id="top-scroll" (scroll)="updateButtons($event)">
 
   <div class="grid grid-cols-1 md:grid-cols-4 h-full z-0">
 
@@ -22,8 +22,15 @@
     <div class="col-span-3 md:scroll-snap" id="right-scroll" (scroll)="updateButtons($event)">
 
         <div *ngFor="let img of images; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
-          <div class="image-wrapper">
+          <div class="image-wrapper" [routerLink]="['test']">
             <div class="image" [ngStyle]="{'background-image': 'url(' + img + ')' }"></div>
+
+            <h2 class="image-text">BlockScript</h2>
+            <div class="image-button">
+              <span>Showcase</span>
+              <i class="icon-chevron-right ml-2 pt-2 font-bold"></i>
+            </div>
+
           </div>
         </div>
 

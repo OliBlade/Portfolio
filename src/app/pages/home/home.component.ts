@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public images = [
-    "https://i.redd.it/tn0k20exrnb51.jpg",
+    "/assets/images/blockscript/function.png",
     "https://wallpapercave.com/wp/qr0bJYf.jpg",
   ]
 
