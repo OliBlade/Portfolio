@@ -1,0 +1,40 @@
+<div class="w-screen h-screen scroll-snap relative home-font" id="top-scroll" (scroll)="updateButtons($event)">
+
+  <div class="grid grid-cols-1 md:grid-cols-4 h-full z-0">
+
+    <div class="col-span-1 h-full snap-start" id="snap-0">
+      <div class="h-screen w-full pt-20 pb-20 px-20 sm:px-10 xl:px-20 relative">
+
+        <div class="mt-16">
+          <h1 class="font-bold text-xl text-blue-700">OLI BLADE</h1>
+          <h2 class="font-extrabold md:title text-5xl mt-4">Software Developer.</h2>
+        </div>
+
+        <div class="menu">
+          <div class="menu-item">WORK</div>
+          <div class="menu-item">CONTACT</div>
+          <div class="menu-item">ABOUT</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-span-3 md:scroll-snap" id="right-scroll" (scroll)="updateButtons($event)">
+
+        <div *ngFor="let img of images; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
+          <div class="image-wrapper">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + img + ')' }"></div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="scroll-control md:rounded rounded-r">
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled"><i class="icon-chevron-up"></i></button>
+  <button class="w-full hover:bg-gray-50"><i class="icon-menu"></i></button>
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled"><i class="icon-chevron-down"></i></button>
+</div>
