@@ -4,8 +4,8 @@
     <div class="grid grid-cols-1 w-full xl:grid-cols-2">
 
       <div class="pt-20 pb-20 xl:pl-20 xl:pr-0 h-screen w-full snap-start">
-        <div class="w-full bg-red-300 image-zoom-wrapper">
-          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/home.png' + ')' }">
+        <div class="h-full image-zoom-wrapper">
+          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/top.png' + ')' }">
           </div>
         </div>
       </div>
@@ -45,13 +45,39 @@
 
   <div class="h-screen w-full container mx-auto">
 
-    <div class="xl:p-20 pt-10 snap-start h-screen">
+    <div class="xl:p-20 pt-10 snap-start">
       <div class="browser-mockup">
         <video class="shadow-lg" playsinline muted autoplay loop id="homevideo" preload="auto" oncanplay="this.play()"
           onloadedmetadata="this.muted = true">
           <source src="/assets/images/blockscript/video.mp4" type="video/mp4">
         </video>
       </div>
+    </div>
+
+    <div class="grid grid-cols-1 xl:grid-cols-2">
+
+      <div class="h-screen snap-start xl:pt-20 xl:pl-10 xl:pb-10 pt-10 pb-10">
+        <div class="h-full image-zoom-wrapper xl:pr-5">
+          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/long.png' + ')' }">
+          </div>
+        </div>
+      </div>
+
+      <div class="h-screen snap-start xl:pt-20 xl:pr-10 xl:pb-10  xl:pl-5 pt-10 pb-10">
+        <div class="h-1/2 pb-2.5">
+          <div class="image-zoom-wrapper h-full">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/grid1.png' + ')' }">
+            </div>
+          </div>
+        </div>
+        <div class="h-1/2 pt-2.5">
+          <div class="image-zoom-wrapper h-full">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/grid2.png' + ')' }">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>

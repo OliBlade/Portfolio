@@ -17,16 +17,15 @@
     .snap-start {
       scroll-snap-align: start;
     }
-
   }
 }
 
 
 .image-zoom-wrapper {
-  @apply w-full h-full shadow-xl relative overflow-hidden;
+  @apply w-full shadow-xl relative overflow-hidden;
 
   .image {
-    @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+    @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-cover;
   }
 
   .image-text {

@@ -22,7 +22,7 @@
     <div class="col-span-3 md:scroll-snap" id="right-scroll" (scroll)="updateButtons($event)">
 
         <div *ngFor="let img of images; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
-          <div class="image-zoom-wrapper cursor-pointer" [routerLink]="['test']">
+          <div class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="['test']">
             <div class="image" [ngStyle]="{'background-image': 'url(' + img + ')' }"></div>
 
             <h2 class="image-text">BlockScript</h2>
