@@ -12,4 +12,10 @@ export class BasicPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public scrollToNextSnap(): void {
+    document.getElementById("scroll").scrollBy({
+      top: 40,
+      behavior: 'smooth'
+    });
+  }
 }

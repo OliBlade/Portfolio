@@ -1,6 +1,59 @@
-<div class="h-screen w-screen">
-  <a class="absolute top-6 right-6 rounded-r bg-white p-2 shadow-lg hover:bg-gray-50 cursor-pointer" [routerLink]="['/']">
-    <i class="icon-cross text-4xl px-1"></i>
-  </a>
+<div id="scroll" class="h-screen w-screen diagonal-stripe scroll-snap">
+
+  <div class="w-full relative">
+    <div class="grid grid-cols-1 w-full xl:grid-cols-2">
+
+      <div class="pt-20 pb-20 xl:pl-20 xl:pr-0 h-screen w-full snap-start">
+        <div class="w-full bg-red-300 image-zoom-wrapper">
+          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/home.png' + ')' }">
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-screen xl:p-20 p-10 snap-start">
+        <div class="xl:p-10 w-full">
+          <h1 class="font-extrabold text-6xl xl:mt-4">BlockScript</h1>
+          <p class="pl-10 pt-10 xl:text-2xl text-xl text-gray-700 font-mono xl:leading-relaxed">
+            BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software
+            backends quickly and easily.
+          </p>
+        </div>
+
+        <div class="text-right w-full mt-10">
+          <span class="text-sm white-button m-1 w-28">
+            <small>Go to BlockScript.app <i class="ml-1 font-bold icon-share"></i></small>
+          </span>
+          <br /><br />
+          <small class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-yellow-500 text-white">Firebase</small>
+          <small class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-red-500 text-white">Angular</small>
+          <small
+            class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-blue-500 text-white animate-pulse">Serverless</small>
+        </div>
+      </div>
+    </div>
+
+    <a class="absolute top-4 right-2 xl:top-20 xl:right-20 white-button" [routerLink]="['/']">
+      <i class="icon-cross text-4xl px-1"></i>
+    </a>
+
+    <div (click)="scrollToNextSnap()" class="absolute scroll-down text-sm white-button">
+      <small>SCROLL DOWN</small>
+      <i class="block font-bold icon-chevron-down"></i>
+    </div>
+
+  </div>
+
+  <div class="h-screen w-full container mx-auto">
+
+    <div class="xl:p-20 pt-10 snap-start h-screen">
+      <div class="browser-mockup">
+        <video class="shadow-lg" playsinline muted autoplay loop id="homevideo" preload="auto" oncanplay="this.play()"
+          onloadedmetadata="this.muted = true">
+          <source src="/assets/images/blockscript/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
 
 </div>

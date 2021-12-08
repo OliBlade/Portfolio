@@ -1,7 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @import './components/_linear-icons.scss';
 @import './components/_fonts.scss';
+
+@layer utilities {
+  @variants responsive {
+    .scroll-snap {
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      scroll-snap-stop: always;
+    }
+
+    .snap-start {
+      scroll-snap-align: start;
+    }
+
+  }
+}
+
+
+.image-zoom-wrapper {
+  @apply w-full h-full shadow-xl relative overflow-hidden;
+
+  .image {
+    @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+  }
+
+  .image-text {
+    @apply absolute text-gray-200 text-5xl font-semibold left-4 bottom-4;
+  }
+
+  .image-button {
+    @apply absolute rounded border-4 border-white text-white px-10 py-5 text-2xl opacity-0;
+    top: calc(50% - 40px);
+    left: calc(50% - 80px);
+  }
+}
+
+.image-zoom-wrapper:hover {
+  .image {
+    @apply scale-110;
+  }
+
+  .image-button {
+    @apply block;
+    @apply transition-all duration-500 ease-in-out opacity-75;
+  }
+}
+
+
+.museo-sans {
+  font-family: "museo-sans", helvetica, arial;
+}
+
+.white-button {
+  @apply rounded shadow-lg text-center cursor-pointer bg-white hover:bg-gray-50 p-2;
+}
