@@ -10,28 +10,28 @@
           <h2 class="font-extrabold md:title text-5xl mt-4">Software Developer.</h2>
         </div>
 
-        <div class="menu">
-          <div class="menu-item">WORK</div>
-          <div class="menu-item">CONTACT</div>
-          <div class="menu-item">ABOUT</div>
+        <div class="menu select-none">
+          <div class="menu-item selected">PROJECTS</div>
+          <div class="menu-item">HONOURABLE MENTIONS</div>
+          <div class="menu-item">ABOUT / CONTACT</div>
         </div>
 
       </div>
     </div>
 
-    <div class="col-span-3 md:scroll-snap" id="right-scroll" (scroll)="updateButtons($event)">
+    <div class="col-span-3 md:scroll-snap select-none" id="right-scroll" (scroll)="updateButtons($event)">
 
-        <div *ngFor="let img of images; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
-          <div class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="['test']">
-            <div class="image" [ngStyle]="{'background-image': 'url(' + img + ')' }"></div>
+        <div *ngFor="let p of projects; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
+          <a class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="[p.normalisedName]" (click)="projectSelected(i)">
+            <div class="image" [ngStyle]="{'background-image': 'url(/assets/images/' + p.normalisedName + '/home.png)' }"></div>
 
-            <h2 class="image-text">BlockScript</h2>
+            <h2 class="image-text">{{p.name}}</h2>
             <div class="image-button">
               <span>Showcase</span>
               <i class="icon-chevron-right ml-2 pt-2 font-bold"></i>
             </div>
 
-          </div>
+          </a>
         </div>
 
     </div>
@@ -40,7 +40,7 @@
 
 </div>
 
-<div class="scroll-control md:rounded rounded-r">
+<div class="scroll-control md:rounded rounded-r select-none">
   <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled"><i class="icon-chevron-up"></i></button>
   <button class="w-full cursor-default"><i class="icon-menu"></i></button>
   <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled"><i class="icon-chevron-down"></i></button>

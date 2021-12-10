@@ -1,23 +1,42 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Project } from 'src/app/classes/project';
+import { MetaService } from 'src/app/services/meta.service';
+import { StateService } from 'src/app/services/state.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements AfterViewInit {
 
-  public images = [
-    "/assets/images/blockscript/home.png",
-    "https://wallpapercave.com/wp/qr0bJYf.jpg",
-  ]
-
+  public projects: Project[];
   public isScrollUpEnabled = false;
   public isScrollDownEnabled = true;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private metaService: MetaService,
+    private stateService: StateService
+  ) {
+    this.route.data.subscribe(routeData => this.projects = routeData.projects);
+    this.metaService.setHomeMeta();
+  }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+    const projectIndex = this.stateService.getSelectedProjectIndex();
+
+    if (projectIndex != null) {
+      const scrollingElement = this.getCurrentScrollElement();
+      const projectElement = document.getElementById('snap-' + (projectIndex + 2))
+
+      // setTimeout(() => {
+      //   scrollingElement.scrollBy({
+      //     top: projectElement.offsetTop
+      //   });
+      // }, 0);
+    }
   }
 
   //Snapping buttons
@@ -65,9 +84,13 @@ export class HomeComponent implements OnInit {
   }
 
   public scrollDownEnabled(): boolean {
-    const lastElement = document.getElementById('snap-' + this.images.length);
+    const lastElement = document.getElementById('snap-' + this.projects.length);
     const currentScroll = this.getCurrentScrollElement();
 
     return lastElement && currentScroll.scrollTop < lastElement.offsetTop - 40;
+  }
+
+  public projectSelected(index: number): void {
+    this.stateService.setSelectedProjectIndex(index);
   }
 }

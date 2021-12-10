@@ -14,7 +14,7 @@ import { BasicPageComponent } from './pages/basic-page/basic-page.component';
     BasicPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule
   ],

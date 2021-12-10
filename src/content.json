@@ -1,0 +1,91 @@
+{
+  "projects": [
+    {
+      "name": "BlockScript",
+      "normalisedName": "blockscript",
+      "projectUrl": "https://blockscript.app",
+      "displayUrl": "blockscript.app",
+      "caption": "BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software backends quickly and easily. <br/><br/> Users can build and run cloud functions without a the ability to code, automating/ scheduling tasks and integrations with explicit detail and customisation unavailable through other systems.",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "Firebase", "color": "#ffca28"  },
+        { "name": "Stripe", "color": "#6772e5"  },
+        { "name": "Cloud Functions", "color": "#ff8400"  },
+        { "name": "Serverless", "color": "#000000"  }
+      ],
+      "features": [
+        "User accounts with sign in from google, github or email",
+        "Visual Scripting system with slick drag drop function builder",
+        "Complex programming features including support for different data types, reccursion, functional programming, API Calls, etc",
+        "Payment/ Premium integration with stripe",
+        "Functions with automatic scheduling and triggers run via cloud functions",
+        "REST API allowing users to integrate BlockScript functions into their own apps"
+      ]
+    },
+    {
+      "name": "3Cols",
+      "normalisedName": "3cols",
+      "projectUrl": "https://3cols.com",
+      "displayUrl": "3cols.com",
+      "caption": "3Cols is a free cloud-based snippet manager allowing you to share code snippets with a team enabling greater productivity and encouraging reusable code. <br/><br/> The site allows uses to create and organise code snippets and share them freely within their organisations or to other 3Cols users.",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "ASP.NET Core", "color": "#0171c8" },
+        { "name": "Bootstrap", "color": "#7952b3" },
+        { "name": "MSSQL", "color": "#999999" },
+        { "name": "SCSS", "color": "#cf649a" }
+      ],
+      "features": [
+        "User accounts with sign in from google",
+        "Code Snippet storage, categorisation and editing",
+        "Syntax/ Language highlighting",
+        "Sharing system via organisations, individual accounts or public links",
+        "Full REST API documented at <a class=\"underline\" href=\"https://3cols.com/docs\" target=\"_blank\">https://3cols.com/docs</a>",
+        ".NET Nuget package for API available at <a class=\"underline\" href=\"https://www.nuget.org/profiles/3Cols\" target=\"_blank\">https://www.nuget.org/profiles/3Cols</a>",
+        "Progressive web app powered by Angular enabling install on desktop/ android",
+        "Link/ associate Snippets together",
+        "Download full Board content as a zip"
+      ]
+    },
+    {
+      "name": "Webpedia",
+      "normalisedName": "webpedia",
+      "projectUrl": "https://cocktails.webpedia.io/",
+      "displayUrl": "cocktails.webpedia.io",
+      "caption": "(Cocktails) Webpedia is the first of a hopefully evergrowing collection of informative wikis powered by a generic angular project which can load custom configurations.<br/><br/>Find over 600 cocktail recipies on this site for free on our dynamically generated pages",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "Firebase", "color": "#ffca28"  },
+        { "name": "Cloud Functions", "color": "#ff8400"  }
+      ],
+      "features": [
+        "Generate dynamic pages from a custom configuration json",
+        "Server Side Rendering with angular universal and cloud functions",
+        "Omisearch across pages (cocktails and ingredients)",
+        "PWA allowing install on desktop/ android",
+        "Mobile friendly"
+      ]
+    },
+    {
+      "name": "RepoBrowser",
+      "normalisedName": "repobrowser",
+      "projectUrl": "https://repobrowser.com",
+      "displayUrl": "repobrowser.com",
+      "caption": "(Pre GitHub web editor) Repo Browser is the faster and easier way to browse GitHub Repositories in your browser or on your desktop, complete with images, videos, and other media. Repo Browser also includes the ability to compare against previous commits and traverse any branches a repository might have",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "ASP.NET Core", "color": "#0171c8" },
+        { "name": "Bootstrap", "color": "#7952b3" },
+        { "name": "MSSQL", "color": "#999999" },
+        { "name": "SCSS", "color": "#cf649a" }
+      ],
+      "features": [
+        "Browse public and private repositories",
+        "View and compare commits in each file",
+        "Open multiple tabs",
+        "Sign in via GitHub to retrieve your own repositories",
+        "Display images, videos, and other media"
+      ]
+    }
+  ]
+}

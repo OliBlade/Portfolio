@@ -5,29 +5,23 @@
 
       <div class="pt-20 pb-20 xl:pl-20 xl:pr-0 h-screen w-full snap-start">
         <div class="h-full image-zoom-wrapper">
-          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/top.png' + ')' }">
+          <div class="image" [ngStyle]="{'background-image': 'url(/assets/images/' + project.normalisedName + '/top.png)' }">
           </div>
         </div>
       </div>
 
       <div class="w-full h-screen xl:p-20 p-10 snap-start">
         <div class="xl:p-10 w-full">
-          <h1 class="font-extrabold text-5xl xl:text-6xl xl:mt-4">BlockScript</h1>
-          <p class="pl-10 pt-10 xl:text-2xl text-xl text-gray-700 font-mono xl:leading-relaxed">
-            BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software
-            backends quickly and easily.
-          </p>
+          <h1 class="font-extrabold text-5xl xl:text-6xl xl:mt-4 break-words">{{project.name}}</h1>
+          <p class="pt-10 xl:text-2xl text-xl text-gray-700 font-mono xl:leading-relaxed" [innerHtml]="project.caption"></p>
         </div>
 
         <div class="text-right w-full mt-10">
-          <span class="text-sm white-button m-1 w-28">
-            <small>Go to BlockScript.app <i class="ml-1 font-bold icon-share"></i></small>
-          </span>
+          <a class="text-sm white-button m-1 w-28" [href]="project.projectUrl" target="_blank">
+            <small>Go to {{project.displayUrl}} <i class="ml-1 font-bold icon-share"></i></small>
+          </a>
           <br /><br />
-          <small class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-yellow-500 text-white">Firebase</small>
-          <small class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-red-500 text-white">Angular</small>
-          <small
-            class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 bg-blue-500 text-white animate-pulse">Serverless</small>
+          <small *ngFor="let t of project.tags; let i = index" class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 text-white select-none inline-block" [ngStyle]="{'background-color': t.color}" [class.animate-pulse]="i == project.tags.length - 1">{{t.name}}</small>
         </div>
       </div>
     </div>
@@ -47,9 +41,9 @@
 
     <div class="xl:p-20 pt-10 snap-start">
       <div class="browser-mockup">
-        <video class="shadow-lg" playsinline muted autoplay loop id="homevideo" preload="auto" oncanplay="this.play()"
+        <video class="shadow-lg w-full" playsinline muted autoplay loop id="basicPageVideo" preload="auto" oncanplay="this.play()"
           onloadedmetadata="this.muted = true">
-          <source src="/assets/images/blockscript/video.mp4" type="video/mp4">
+          <source [src]="'/assets/images/' + project.normalisedName + '/video.mp4'" type="video/mp4">
         </video>
       </div>
     </div>
@@ -58,7 +52,7 @@
 
       <div class="h-screen snap-start xl:pt-20 xl:pl-10 xl:pb-10 pt-10 pb-10">
         <div class="h-full image-zoom-wrapper xl:pr-5">
-          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/long.png' + ')' }">
+          <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/' + project.normalisedName + '/long.png' + ')' }">
           </div>
         </div>
       </div>
@@ -66,13 +60,13 @@
       <div class="h-screen snap-start xl:pt-20 xl:pr-10 xl:pb-10  xl:pl-5 pt-10 pb-10">
         <div class="h-1/2 pb-2.5">
           <div class="image-zoom-wrapper h-full">
-            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/grid1.png' + ')' }">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/' + project.normalisedName + '/grid1.png' + ')' }">
             </div>
           </div>
         </div>
         <div class="h-1/2 pt-2.5">
           <div class="image-zoom-wrapper h-full">
-            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/blockscript/grid2.png' + ')' }">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + '/assets/images/' + project.normalisedName + '/grid2.png' + ')' }">
             </div>
           </div>
         </div>
@@ -85,24 +79,19 @@
     <div class="h-screen w-full xl:p-20 p-10 xl:grid xl:grid-cols-2">
 
       <div class="w-full xl:pt-10">
-        <h1 class="font-bold text-sm ml-1 text-blue-700">BLOCKSCRIPT</h1>
+        <h1 class="font-bold text-sm ml-1 text-blue-700">{{project.name}}</h1>
         <h1 class="font-extrabold text-6xl mt-2">Features</h1>
       </div>
 
       <div class="xl:text-2xl text-xl text-gray-700">
         <ul class="list-disc mt-10 font-mono xl:leading-relaxed">
-          <li>User accounts with sign in from google, github or email</li>
-          <li>Visual Scripting system</li>
-          <li>Payment/ Premium integration with stripe</li>
-          <li>REST API</li>
-          <li>Function Scheduling</li>
-          <li>Execution tracking and limitations</li>
+          <li *ngFor="let f of project.features" class="xl:mt-5 md:mt-2" [innerHtml]="f"></li>
         </ul>
 
-        <div class="w-full text-right">
-          <span class="text-sm white-button m-1 w-28">
-            <small>Go to BlockScript.app <i class="ml-1 font-bold icon-share"></i></small>
-          </span>
+        <div class="w-full text-right mt-5">
+          <a class="text-sm white-button m-1 w-28" [href]="project.projectUrl" target="_blank">
+            <small>Go to {{project.displayUrl}} <i class="ml-1 font-bold icon-share"></i></small>
+          </a>
         </div>
       </div>
 

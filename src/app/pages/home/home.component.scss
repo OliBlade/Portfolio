@@ -48,6 +48,10 @@
 
   .menu-item {
     @apply font-bold text-xl py-1 hover:text-blue-700 cursor-pointer;
+
+    &.selected {
+      @apply text-blue-700;
+    }
   }
 }
 

@@ -9,8 +9,6 @@ import { routerTransition } from './app.animations';
   animations: [routerTransition]
 })
 export class AppComponent {
-  title = "Oli's Portfolio";
-
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
