@@ -4,21 +4,21 @@
       font-size: 3vw;
       line-height: 1;
     }
-
-    .scroll-snap {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
-
-    .scroll-snap::-webkit-scrollbar {
-      display: none;
-    }
   }
 }
 
 .image-zoom-wrapper:hover {
   .image {
     filter: brightness(50%);
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 

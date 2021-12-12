@@ -30,6 +30,7 @@
       "caption": "3Cols is a free cloud-based snippet manager allowing you to share code snippets with a team enabling greater productivity and encouraging reusable code. <br/><br/> The site allows uses to create and organise code snippets and share them freely within their organisations or to other 3Cols users.",
       "tags": [
         { "name": "Angular", "color": "#e52a3a" },
+        { "name": "Angular Universal", "color": "#14B003" },
         { "name": "ASP.NET Core", "color": "#0171c8" },
         { "name": "Bootstrap", "color": "#7952b3" },
         { "name": "MSSQL", "color": "#999999" },
@@ -44,7 +45,27 @@
         ".NET Nuget package for API available at <a class=\"underline\" href=\"https://www.nuget.org/profiles/3Cols\" target=\"_blank\">https://www.nuget.org/profiles/3Cols</a>",
         "Progressive web app powered by Angular enabling install on desktop/ android",
         "Link/ associate Snippets together",
-        "Download full Board content as a zip"
+        "Download full Board content as a zip",
+        "SSR with Angular Universal"
+      ]
+    },
+    {
+      "name": "Docs",
+      "normalisedName": "docs",
+      "projectUrl": "https://docs.blockscript.app",
+      "displayUrl": "docs.blockscript.app",
+      "caption": "The docs project was created as a generic documentation template for other projects such as <a class=\"underline\" target=\"_blank\" href=\"https://docs.blockscript.app\">BlockScript</a> and <a class=\"underline\" target=\"_blank\" href=\"https://docs.3cols.com\">3Cols</a>. <br/><br/> This site uses Gulp + Angular Universal to dynamically build markdown pages into prerendered HTML pages, fully automated with GitHub Actions.",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "Angular Universal", "color": "#14B003" },
+        { "name": "GitHub Actions", "color": "#2088FF" }
+      ],
+      "features": [
+        "Prerendering with Angular Universal",
+        "Build rendered html pages from markdown files",
+        "Automated build pipeline with GitHub Actions",
+        "Mobile Friendly",
+        "Generic template with reusability for other projects"
       ]
     },
     {

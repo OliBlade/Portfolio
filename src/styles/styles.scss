@@ -58,3 +58,8 @@
 .white-button {
   @apply rounded shadow-lg text-center cursor-pointer bg-white hover:bg-gray-50 p-2 select-none;
 }
+
+
+button:disabled {
+  cursor: not-allowed;
+}

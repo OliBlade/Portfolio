@@ -1,4 +1,4 @@
-<div class="w-screen h-screen scroll-snap relative diagonal-stripe" id="top-scroll" (scroll)="updateButtons($event)">
+<div class="w-screen h-screen overflow-y-auto relative diagonal-stripe hide-scrollbar" [class.scroll-snap]="loaded" id="top-scroll" (scroll)="updateButtons($event)">
 
   <div class="grid grid-cols-1 md:grid-cols-4 h-full z-0">
 
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="col-span-3 md:scroll-snap select-none" id="right-scroll" (scroll)="updateButtons($event)">
+    <div class="col-span-3 md:overflow-y-auto select-none hide-scrollbar" [class.md:scroll-snap]="loaded" id="right-scroll" (scroll)="updateButtons($event)">
 
         <div *ngFor="let p of projects; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
           <a class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="[p.normalisedName]" (click)="projectSelected(i)">

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/classes/project';
 import { MetaService } from 'src/app/services/meta.service';
@@ -14,6 +14,7 @@ export class HomeComponent implements AfterViewInit {
   public projects: Project[];
   public isScrollUpEnabled = false;
   public isScrollDownEnabled = true;
+  public loaded = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,16 +28,15 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const projectIndex = this.stateService.getSelectedProjectIndex();
 
+    setTimeout(() => {
     if (projectIndex != null) {
-      const scrollingElement = this.getCurrentScrollElement();
-      const projectElement = document.getElementById('snap-' + (projectIndex + 2))
-
-      // setTimeout(() => {
-      //   scrollingElement.scrollBy({
-      //     top: projectElement.offsetTop
-      //   });
-      // }, 0);
-    }
+      const projectElement = document.getElementById('snap-' + (projectIndex + 1))
+        projectElement.scrollIntoView();
+        this.loaded = true;
+      } else {
+        this.loaded = true;
+      }
+    }, 0);
   }
 
   //Snapping buttons
