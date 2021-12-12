@@ -10,6 +10,7 @@
         { "name": "Angular", "color": "#e52a3a" },
         { "name": "Firebase", "color": "#ffca28"  },
         { "name": "Stripe", "color": "#6772e5"  },
+        { "name": "Tailwind", "color": "#07B6D5"  },
         { "name": "Cloud Functions", "color": "#ff8400"  },
         { "name": "Serverless", "color": "#000000"  }
       ],
@@ -106,6 +107,62 @@
         "Open multiple tabs",
         "Sign in via GitHub to retrieve your own repositories",
         "Display images, videos, and other media"
+      ]
+    }
+  ],
+  "otherProjects": [
+    {
+      "name": "ZoomCrasher.app",
+      "projectUrl": "https://zoomcrasher.app",
+      "displayUrl": "ZoomCrasher.app",
+      "caption": "Zoom Crasher is a curated collection of Open Zoom meetings collected using the Twitter API. Find free useful classes or just try out some random links.<br/><br/>Powered by an ASP.NET core back-end querying the Twitter API and a decoupled front-end using Firebase.",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "ASP.NET Core", "color": "#0171c8" },
+        { "name": "Firebase", "color": "#ffca28"  },
+        { "name": "Twitter API", "color": "#1da1f2"  }
+      ]
+    },
+    {
+      "name": "McMurtry Automotive",
+      "caption": "Created a WPF application to assist with the management and creation of CAD drawings and part files for an innovative automotive company.",
+      "tags": [
+        { "name": "Freelance", "color": "#c4105b" },
+        { "name": ".Net Framework", "color": "#0171c8" },
+        { "name": "WPF", "color": "#7a50e0" }
+      ]
+    },
+    {
+      "name": "NeoGamers",
+      "caption": "Laid the foundation for an E-commerce site for trading game items, complete with PayPal integration and content management system.",
+      "tags": [
+        { "name": "Freelance", "color": "#c4105b" },
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "ASP.NET Core", "color": "#0171c8" },
+        { "name": "Bootstrap", "color": "#7952b3" },
+        { "name": "MSSQL", "color": "#999999" },
+        { "name": "SCSS", "color": "#cf649a" },
+        { "name": "PayPal", "color": "#003087" }
+      ]
+    },
+    {
+      "name": "Loddg",
+      "caption": "Implemented google maps, restyled header and a number of other components, fixed bugs and improved the performance of their site.",
+      "tags": [
+        { "name": "AngularJS", "color": "#e52a3a" },
+        { "name": "Google Maps", "color": "#34a853" }
+      ]
+    },
+    {
+      "name": "IFAPDB",
+      "caption": "IFAPDB is a community populated site which aims to provide a service similar to IMDB but specifically tailored to nude scenes in mainstream media. We wrote it from the ground up to include key features such as a full user system with login, profiles and scoring for community contributions which provides users with rewards.<br/><br/>Additionally, IFAPDB is a full-fledged CMS and utilises a reviewing system with comments, replies and ratings. The community accessible content management system features tagging, videos, timings, descriptions, a media/actor search and a fully featured admin section.<br/><br/><span class=\"font-semibold\">Please Note</span>: This site is NSFW.",
+      "tags": [
+        { "name": "Freelance", "color": "#c4105b" },
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "ASP.NET Core", "color": "#0171c8" },
+        { "name": "Bootstrap", "color": "#7952b3" },
+        { "name": "MSSQL", "color": "#999999" },
+        { "name": "SCSS", "color": "#cf649a" }
       ]
     }
   ]

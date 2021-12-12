@@ -9,6 +9,7 @@
   @variants responsive {
     .scroll-snap {
       overflow-y: auto;
+      overflow-x: hidden;
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
       scroll-snap-stop: always;
@@ -37,6 +38,10 @@
     top: calc(50% - 40px);
     left: calc(50% - 80px);
   }
+}
+
+.tag {
+  @apply rounded text-sm shadow-lg text-center px-2 py-1 m-1 text-white select-none inline-block;
 }
 
 .image-zoom-wrapper:hover {

@@ -5,9 +5,10 @@ import { BasicPageComponent } from './pages/basic-page/basic-page.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const projects = new FileLoader().getProjects();
+const otherProjects = new FileLoader().getOtherProjects();
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full', data: { animation: 'home', projects: projects } }
+  { path: '', component: HomeComponent, pathMatch: 'full', data: { animation: 'home', projects: projects, otherProjects: otherProjects } }
 ];
 
 projects.forEach(p => {

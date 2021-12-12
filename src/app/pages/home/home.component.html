@@ -1,4 +1,4 @@
-<div class="w-screen h-screen overflow-y-auto relative diagonal-stripe hide-scrollbar" [class.scroll-snap]="loaded" id="top-scroll" (scroll)="updateButtons($event)">
+<div class="w-screen h-screen md:overflow-y-hidden relative diagonal-stripe hide-scrollbar" [class.scroll-snap]="loaded" id="top-scroll" (scroll)="updateButtons($event)">
 
   <div class="grid grid-cols-1 md:grid-cols-4 h-full z-0">
 
@@ -10,16 +10,16 @@
           <h2 class="font-extrabold md:title text-5xl mt-4">Software Developer.</h2>
         </div>
 
-        <div class="menu select-none">
-          <div class="menu-item selected">PROJECTS</div>
-          <div class="menu-item">HONOURABLE MENTIONS</div>
-          <div class="menu-item">ABOUT / CONTACT</div>
+        <div class="menu select-none text-xl">
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'projects'" (click)="menuSelect('projects')">PROJECTS</div>
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'other'"  (click)="menuSelect('other')">HONOURABLE MENTIONS</div>
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'about'"  (click)="menuSelect('about')">ABOUT / CONTACT</div>
         </div>
 
       </div>
     </div>
 
-    <div class="col-span-3 md:overflow-y-auto select-none hide-scrollbar" [class.md:scroll-snap]="loaded" id="right-scroll" (scroll)="updateButtons($event)">
+    <div *ngIf="selectedMenuItem === 'projects'" [@projectAnimation] class="col-span-3 md:overflow-y-auto select-none" [class.md:scroll-snap]="loaded" id="right-scroll" (scroll)="updateButtons($event)">
 
         <div *ngFor="let p of projects; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
           <a class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="[p.normalisedName]" (click)="projectSelected(i)">
@@ -36,11 +36,65 @@
 
     </div>
 
+    <div *ngIf="selectedMenuItem === 'other'" class="col-span-3 md:p-20 p-10 snap-start md:overflow-y-auto select-none">
+      <div *ngFor="let op of otherProjects; let i = index;" class="bg-white rounded w-full shadow-lg p-2 hover:bg-gray-50 text-gray-700" [class.rounded-t]="i == 0" [class.rounded-b]="i == otherProjects.length" [class.border-b]="i < otherProjects.length">
+        <h2 class="font-bold">{{op.name}}</h2>
+        <span class="font-mono" [innerHtml]="op.caption"></span>
+
+        <div class="text-right w-full mt-2">
+          <ng-container *ngIf="op.projectUrl">
+            <a class="text-sm white-button m-1 w-28" [href]="op.projectUrl" target="_blank">
+              <small>Go to {{op.displayUrl}} <i class="ml-1 font-bold icon-share"></i></small>
+            </a>
+            <br /><br />
+          </ng-container>
+          <small *ngFor="let t of op.tags" class="tag" [ngStyle]="{'background-color': t.color}">{{t.name}}</small>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="selectedMenuItem === 'about'" class="col-span-3 md:p-20 p-10 snap-start md:overflow-y-auto select-none">
+      <div class="bg-white rounded w-full shadow-lg p-2 hover:bg-gray-50">
+        <h2 class="font-bold">My Portfolio</h2>
+        <span class="font-mono text-gray-700">
+          This site is a collection of my personal projects.<br/><br/>
+          In the honourable mentions section, you will find freelance projects I have worked on, along with some other projects
+          which didn't quite make the cut.<br/><br/>
+          If you would like to see the source code for this portfolio, you can find it on my <a class="underline" href="https://github.com/OliBlade" target="_blank">GitHub</a>.
+        </span>
+        <div class="text-right w-full mt-2">
+          <a class="text-sm white-button m-1 w-28" href="https://github.com/OliBlade/Portfolio" target="_blank">
+            <small>GitHub for Portfolio <i class="ml-1 font-bold icon-share"></i></small>
+          </a>
+          <br /><br />
+          <small class="tag" style="background-color: #07B6D5;">Tailwind</small>
+          <small class="tag" style="background-color: #e52a3a;">Angular</small>
+          <small class="tag" style="background-color: #14B003;">Angular Universal</small>
+        </div>
+      </div>
+
+      <div class="text-right w-full mt-10">
+        <a class="text-sm white-button m-1" href="https://github.com/OliBlade/Portfolio" target="_blank">
+          <i class="mr-1 font-bold icon-github"></i><small>GitHub</small>
+        </a>
+        <a class="text-sm white-button m-1" href="mailto:email@oliblade.com" target="_blank">
+          <i class="mr-1 font-bold icon-at-sign"></i><small>email@oliblade.com</small>
+        </a>
+        <a class="text-sm white-button m-1" href="https://www.linkedin.com/in/oliblade/" target="_blank">
+          <i class="mr-1 font-bold icon-at-sign"></i><small>LinkedIn</small>
+        </a>
+        <a class="text-sm white-button m-1" href="https://medium.com/@OliBlade" target="_blank">
+          <i class="mr-1 font-bold icon-pen3"></i><small>Blog</small>
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
 </div>
 
-<div class="scroll-control md:rounded rounded-r select-none">
+<div *ngIf="selectedMenuItem === 'projects'" class="scroll-control md:rounded rounded-r select-none">
   <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled"><i class="icon-chevron-up"></i></button>
   <button class="w-full cursor-default"><i class="icon-menu"></i></button>
   <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled"><i class="icon-chevron-down"></i></button>

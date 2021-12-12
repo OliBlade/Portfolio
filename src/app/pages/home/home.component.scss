@@ -4,6 +4,11 @@
       font-size: 3vw;
       line-height: 1;
     }
+
+    .menu-item-text {
+      font-size: 1.2vw;
+      line-height: 1;
+    }
   }
 }
 
@@ -47,7 +52,7 @@
   @apply absolute bottom-20;
 
   .menu-item {
-    @apply font-bold text-xl py-1 hover:text-blue-700 cursor-pointer;
+    @apply font-bold py-1 hover:text-blue-700 cursor-pointer;
 
     &.selected {
       @apply text-blue-700;

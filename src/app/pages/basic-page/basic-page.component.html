@@ -21,7 +21,7 @@
             <small>Go to {{project.displayUrl}} <i class="ml-1 font-bold icon-share"></i></small>
           </a>
           <br /><br />
-          <small *ngFor="let t of project.tags; let i = index" class="rounded text-sm shadow-lg text-center px-2 py-1 m-1 text-white select-none inline-block" [ngStyle]="{'background-color': t.color}" [class.animate-pulse]="i == project.tags.length - 1">{{t.name}}</small>
+          <small *ngFor="let t of project.tags; let i = index" class="tag" [ngStyle]="{'background-color': t.color}" [class.animate-pulse]="i == project.tags.length - 1">{{t.name}}</small>
         </div>
       </div>
     </div>
