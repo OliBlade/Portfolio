@@ -93,10 +93,10 @@ export class HomeComponent implements AfterViewInit {
   // Scroll buttons enabling
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.updateButtons(event);
+    this.updateButtons();
   }
 
-  public updateButtons(event: Event): void {
+  public updateButtons(): void {
     this.isScrollUpEnabled = this.scrollUpEnabled();
     this.isScrollDownEnabled = this.scrollDownEnabled();
   }
@@ -127,6 +127,7 @@ export class HomeComponent implements AfterViewInit {
       if (!this.isScreenMd()) {
         this.scrollToNextSnap();
       }
+      this.updateButtons();
     }, 500);
   }
 }
