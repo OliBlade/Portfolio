@@ -95,7 +95,7 @@
 </div>
 
 <div *ngIf="selectedMenuItem === 'projects'" class="scroll-control md:rounded rounded-r select-none">
-  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled" aria-hidden="Scroll Up"><i class="icon-chevron-up"></i></button>
-  <button class="w-full cursor-default" aria-hidden="Placeholder"><i class="icon-menu"></i></button>
-  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled" aria-hidden="Scroll Down"><i class="icon-chevron-down"></i></button>
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled" aria-hidden="true"><i class="icon-chevron-up"></i></button>
+  <button class="w-full cursor-default" aria-hidden="true"><i class="icon-menu"></i></button>
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled" aria-hidden="true"><i class="icon-chevron-down"></i></button>
 </div>
