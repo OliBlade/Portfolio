@@ -149,6 +149,7 @@
       "name": "Loddg",
       "caption": "Implemented google maps, restyled header and a number of other components, fixed bugs and improved the performance of their site.",
       "tags": [
+        { "name": "Freelance", "color": "#c4105b" },
         { "name": "AngularJS", "color": "#e52a3a" },
         { "name": "Google Maps", "color": "#34a853" }
       ]
