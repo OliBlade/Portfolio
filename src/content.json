@@ -83,7 +83,7 @@
       "features": [
         "Generate dynamic pages from a custom configuration json",
         "Server Side Rendering with angular universal and cloud functions",
-        "Omisearch across pages (cocktails and ingredients)",
+        "Omnisearch across pages (cocktails and ingredients)",
         "PWA allowing install on desktop/ android",
         "Mobile friendly"
       ]
