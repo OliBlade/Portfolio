@@ -5,7 +5,7 @@
       "normalisedName": "blockscript",
       "projectUrl": "https://blockscript.app",
       "displayUrl": "blockscript.app",
-      "caption": "BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software backends quickly and easily. <br/><br/> Users can build and run cloud functions without a the ability to code, automating/ scheduling tasks and integrations with explicit detail and customisation unavailable through other systems.",
+      "caption": "BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software backends quickly and easily. <br/><br/> Users can build and run cloud functions without the ability to code, automating/ scheduling tasks and integrations with explicit detail and customisation unavailable through other systems.",
       "tags": [
         { "name": "Angular", "color": "#e52a3a" },
         { "name": "Firebase", "color": "#ffca28"  },
