@@ -28,7 +28,7 @@
       "normalisedName": "dashifi",
       "projectUrl": "https://dashifi.app",
       "displayUrl": "dashifi.app",
-      "caption": "Dashifi is a slick Dashboard builder for REST API driven dashboards.<br/><br/> The site enables uses to create and populate beautiful Dashboards, pushing data and monitoring connections in real time via SignalR.",
+      "caption": "Dashifi is a slick Dashboard builder for REST API driven dashboards.<br/><br/> The site enables users to create and populate beautiful Dashboards, pushing data and monitoring connections in real time via SignalR.",
       "tags": [
         { "name": "Angular", "color": "#e52a3a" },
         { "name": "ASP.NET Core", "color": "#0171c8" },
