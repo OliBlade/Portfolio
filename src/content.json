@@ -64,9 +64,9 @@
       ],
       "features": [
         "User accounts with sign in from google",
-        "Code Snippet storage, categorisation and editing",
         "Syntax/ Language highlighting",
         "Sharing system via organisations, individual accounts or public links",
+        "VSCode extension powered with the API available on the <a class=\"underline\" href=\"https://marketplace.visualstudio.com/items?itemName=3Cols.3cols-vscode\" target=\"_blank\">Visual Studio Marketplace</a>",
         "Full REST API documented at <a class=\"underline\" href=\"https://3cols.com/docs\" target=\"_blank\">https://3cols.com/docs</a>",
         ".NET Nuget package for API available at <a class=\"underline\" href=\"https://www.nuget.org/profiles/3Cols\" target=\"_blank\">https://www.nuget.org/profiles/3Cols</a>",
         "Progressive web app powered by Angular enabling install on desktop/ android",
