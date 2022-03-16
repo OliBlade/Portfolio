@@ -101,7 +101,8 @@
       "displayUrl": "mosaic-builder.web.app",
       "caption": "Mosaic Builder is a truly free, in browser rendered mosaic image generator built using React.<br/><br/>Create unlimited mosaic images with an easy interface allowing for tailoring to your specification.",
       "tags": [
-        { "name": "React", "color": "#61DAFB"  }
+        { "name": "React", "color": "#61DAFB"  },
+        { "name": "Tailwind", "color": "#07B6D5"  }
       ],
       "features": [
         "Generate unlimited free mosaic images",
