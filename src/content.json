@@ -95,6 +95,23 @@
       ]
     },
     {
+      "name": "Mosaic Builder",
+      "normalisedName": "mosaic-builder",
+      "projectUrl": "https://mosaic-builder.web.app",
+      "displayUrl": "mosaic-builder.web.app",
+      "caption": "Mosaic Builder is a truly free, in browser rendered mosaic image generator built using React.<br/><br/>Create unlimited mosaic images with an easy interface allowing for tailoring to your specification.",
+      "tags": [
+        { "name": "React", "color": "#61DAFB"  }
+      ],
+      "features": [
+        "Generate unlimited free mosaic images",
+        "Render in browser with no api dependencies",
+        "Use multiple images for each mosaic",
+        "Colour matching algorithm allowing for the complete removal of the target image",
+        "Mobile friendly"
+      ]
+    },
+    {
       "name": "Webpedia",
       "normalisedName": "webpedia",
       "projectUrl": "https://cocktails.webpedia.io/",
