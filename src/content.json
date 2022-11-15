@@ -113,25 +113,6 @@
       ]
     },
     {
-      "name": "Webpedia",
-      "normalisedName": "webpedia",
-      "projectUrl": "https://cocktails.webpedia.io/",
-      "displayUrl": "cocktails.webpedia.io",
-      "caption": "(Cocktails) Webpedia is the first of a hopefully evergrowing collection of informative wikis powered by a generic angular project which can load custom configurations.<br/><br/>Find over 600 cocktail recipies on this site for free on our dynamically generated pages",
-      "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "Firebase", "color": "#ffca28"  },
-        { "name": "Cloud Functions", "color": "#ff8400"  }
-      ],
-      "features": [
-        "Generate dynamic pages from a custom configuration json",
-        "Server Side Rendering with angular universal and cloud functions",
-        "Omnisearch across pages (cocktails and ingredients)",
-        "PWA allowing install on desktop/ android",
-        "Mobile friendly"
-      ]
-    },
-    {
       "name": "RepoBrowser",
       "normalisedName": "repobrowser",
       "projectUrl": "https://repobrowser.com",
@@ -151,21 +132,28 @@
         "Sign in via GitHub to retrieve your own repositories",
         "Display images, videos, and other media"
       ]
+    },
+    {
+      "name": "Webpedia",
+      "normalisedName": "webpedia",
+      "projectUrl": "https://cocktails.webpedia.io/",
+      "displayUrl": "cocktails.webpedia.io",
+      "caption": "(Cocktails) Webpedia is the first of a hopefully evergrowing collection of informative wikis powered by a generic angular project which can load custom configurations.<br/><br/>Find over 600 cocktail recipies on this site for free on our dynamically generated pages",
+      "tags": [
+        { "name": "Angular", "color": "#e52a3a" },
+        { "name": "Firebase", "color": "#ffca28"  },
+        { "name": "Cloud Functions", "color": "#ff8400"  }
+      ],
+      "features": [
+        "Generate dynamic pages from a custom configuration json",
+        "Server Side Rendering with angular universal and cloud functions",
+        "Omnisearch across pages (cocktails and ingredients)",
+        "PWA allowing install on desktop/ android",
+        "Mobile friendly"
+      ]
     }
   ],
   "otherProjects": [
-    {
-      "name": "ZoomCrasher.app",
-      "projectUrl": "https://zoomcrasher.app",
-      "displayUrl": "ZoomCrasher.app",
-      "caption": "Zoom Crasher is a curated collection of Open Zoom meetings collected using the Twitter API. Find free useful classes or just try out some random links.<br/><br/>Powered by an ASP.NET core back-end querying the Twitter API and a decoupled front-end using Firebase.",
-      "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Firebase", "color": "#ffca28"  },
-        { "name": "Twitter API", "color": "#1da1f2"  }
-      ]
-    },
     {
       "name": "McMurtry Automotive",
       "caption": "Created a WPF application to assist with the management and creation of CAD drawings and part files for an innovative automotive company.",
@@ -195,18 +183,6 @@
         { "name": "Freelance", "color": "#c4105b" },
         { "name": "AngularJS", "color": "#e52a3a" },
         { "name": "Google Maps", "color": "#34a853" }
-      ]
-    },
-    {
-      "name": "IFAPDB",
-      "caption": "IFAPDB is a community populated site which aims to provide a service similar to IMDB but specifically tailored to nude scenes in mainstream media. We wrote it from the ground up to include key features such as a full user system with login, profiles and scoring for community contributions which provides users with rewards.<br/><br/>Additionally, IFAPDB is a full-fledged CMS and utilises a reviewing system with comments, replies and ratings. The community accessible content management system features tagging, videos, timings, descriptions, a media/actor search and a fully featured admin section.<br/><br/><span class=\"font-semibold\">Please Note</span>: This site is NSFW.",
-      "tags": [
-        { "name": "Freelance", "color": "#c4105b" },
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Bootstrap", "color": "#7952b3" },
-        { "name": "MSSQL", "color": "#999999" },
-        { "name": "SCSS", "color": "#cf649a" }
       ]
     }
   ]
