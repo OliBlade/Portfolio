@@ -76,10 +76,10 @@
       ]
     },
     {
-      "name": "Three Player Chess",
-      "normalisedName": "three-player-chess",
-      "projectUrl": "https://three-player-chess.web.app",
-      "displayUrl": "three-player-chess.web.app",
+      "name": "3-Chess",
+      "normalisedName": "3-chess",
+      "projectUrl": "https://3-chess.com",
+      "displayUrl": "3-chess.com",
       "caption": "Play three player chess online with friends.<br/><br/> This site enables users to play three player chess online with friends in real time.",
       "tags": [
         { "name": "React", "color": "#61DAFB"  },

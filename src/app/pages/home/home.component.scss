@@ -63,3 +63,8 @@
 .diagonal-stripe {
   background: linear-gradient(135deg, #ebebeb 0%, #ebebeb 26%, transparent 26%);
 }
+
+.outline-text {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
