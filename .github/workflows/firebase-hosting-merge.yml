@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - master
@@ -11,10 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run prerender
+
+      - name: Use Node.js 12
+        uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prerender and build
+        run: npm run prerender
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_74F1A }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_74F1A }}"
           channelId: live
           projectId: portfolio-74f1a

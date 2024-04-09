@@ -7,12 +7,30 @@
       "displayUrl": "blockscript.app",
       "caption": "BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software backends quickly and easily. <br/><br/> Users can build and run cloud functions without the ability to code, automating/ scheduling tasks and integrations with explicit detail and customisation unavailable through other systems.",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "Firebase", "color": "#ffca28"  },
-        { "name": "Stripe", "color": "#6772e5"  },
-        { "name": "Tailwind", "color": "#07B6D5"  },
-        { "name": "Cloud Functions", "color": "#ff8400"  },
-        { "name": "Serverless", "color": "#000000"  }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "Firebase",
+          "color": "#ffca28"
+        },
+        {
+          "name": "Stripe",
+          "color": "#6772e5"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#07B6D5"
+        },
+        {
+          "name": "Cloud Functions",
+          "color": "#ff8400"
+        },
+        {
+          "name": "Serverless",
+          "color": "#000000"
+        }
       ],
       "features": [
         "User accounts with sign in from google, github or email",
@@ -26,15 +44,30 @@
     {
       "name": "Dashifi",
       "normalisedName": "dashifi",
-      "projectUrl": "https://dashifi.app",
-      "displayUrl": "dashifi.app",
+      "projectUrl": "https://dashifi-5490e.web.app",
+      "displayUrl": "dashifi-5490e.web.app",
       "caption": "Dashifi is a slick Dashboard builder for REST API driven dashboards.<br/><br/> The site enables users to create and populate beautiful Dashboards, pushing data and monitoring connections in real time via SignalR.",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Stripe", "color": "#6772e5"  },
-        { "name": "Tailwind", "color": "#07B6D5"  },
-        { "name": "SignalR", "color": "#59B4D9" }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "ASP.NET Core",
+          "color": "#0171c8"
+        },
+        {
+          "name": "Stripe",
+          "color": "#6772e5"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#07B6D5"
+        },
+        {
+          "name": "SignalR",
+          "color": "#59B4D9"
+        }
       ],
       "features": [
         "User accounts with sign in from Google and GitHub",
@@ -45,7 +78,7 @@
         "Realtime updates of connected Dashboards",
         "Premium features with stripe",
         "<a class=\"underline\" href=\"https://blockscript.app\" target=\"_blank\">BlockScript</a> integration for easy no-code updates",
-        "Full Documentation at <a class=\"underline\" href=\"https://docs.dashifi.app\" target=\"_blank\">https://docs.dashifi.app</a>"
+        "Full Documentation at <a class=\"underline\" href=\"https://dashifi-docs.web.app\" target=\"_blank\">https://dashifi-docs.web.app</a>"
       ]
     },
     {
@@ -55,12 +88,30 @@
       "displayUrl": "3cols.com",
       "caption": "3Cols is a free cloud-based snippet manager allowing you to share code snippets with a team enabling greater productivity and encouraging reusable code. <br/><br/> The site allows uses to create and organise code snippets and share them freely within their organisations or to other 3Cols users.",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "Angular Universal", "color": "#14B003" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Bootstrap", "color": "#7952b3" },
-        { "name": "MSSQL", "color": "#999999" },
-        { "name": "SCSS", "color": "#cf649a" }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "Angular Universal",
+          "color": "#14B003"
+        },
+        {
+          "name": "ASP.NET Core",
+          "color": "#0171c8"
+        },
+        {
+          "name": "Bootstrap",
+          "color": "#7952b3"
+        },
+        {
+          "name": "MSSQL",
+          "color": "#999999"
+        },
+        {
+          "name": "SCSS",
+          "color": "#cf649a"
+        }
       ],
       "features": [
         "User accounts with sign in from google",
@@ -82,9 +133,18 @@
       "displayUrl": "3-chess.com",
       "caption": "Play three player chess online with friends.<br/><br/> This site enables users to play three player chess online with friends in real time.",
       "tags": [
-        { "name": "React", "color": "#61DAFB"  },
-        { "name": "Firebase", "color": "#ffca28"  },
-        { "name": "Tailwind", "color": "#07B6D5"  }
+        {
+          "name": "React",
+          "color": "#61DAFB"
+        },
+        {
+          "name": "Firebase",
+          "color": "#ffca28"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#07B6D5"
+        }
       ],
       "features": [
         "Realtime multiplayer chess",
@@ -98,11 +158,20 @@
       "normalisedName": "docs",
       "projectUrl": "https://docs.blockscript.app",
       "displayUrl": "docs.blockscript.app",
-      "caption": "The docs project was created as a generic documentation template for other projects such as <a class=\"underline\" target=\"_blank\" href=\"https://docs.blockscript.app\">BlockScript</a>, <a class=\"underline\" target=\"_blank\" href=\"https://docs.3cols.com\">3Cols</a> and <a class=\"underline\" target=\"_blank\" href=\"https://docs.dashifi.app\">Dashifi</a>. <br/><br/> This site uses Gulp + Angular Universal to dynamically build markdown pages into prerendered HTML pages, fully automated with GitHub Actions.",
+      "caption": "The docs project was created as a generic documentation template for other projects such as <a class=\"underline\" target=\"_blank\" href=\"https://docs.blockscript.app\">BlockScript</a>, <a class=\"underline\" target=\"_blank\" href=\"https://docs.3cols.com\">3Cols</a> and <a class=\"underline\" target=\"_blank\" href=\"https://dashifi-docs.web.app\">Dashifi</a>. <br/><br/> This site uses Gulp + Angular Universal to dynamically build markdown pages into prerendered HTML pages, fully automated with GitHub Actions.",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "Angular Universal", "color": "#14B003" },
-        { "name": "GitHub Actions", "color": "#2088FF" }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "Angular Universal",
+          "color": "#14B003"
+        },
+        {
+          "name": "GitHub Actions",
+          "color": "#2088FF"
+        }
       ],
       "features": [
         "Prerendering with Angular Universal",
@@ -119,8 +188,14 @@
       "displayUrl": "mosaic-builder.web.app",
       "caption": "Mosaic Builder is a truly free, in browser rendered mosaic image generator built using React.<br/><br/>Create unlimited mosaic images with an easy interface allowing for tailoring to your specification.",
       "tags": [
-        { "name": "React", "color": "#61DAFB"  },
-        { "name": "Tailwind", "color": "#07B6D5"  }
+        {
+          "name": "React",
+          "color": "#61DAFB"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#07B6D5"
+        }
       ],
       "features": [
         "Generate unlimited free mosaic images",
@@ -137,11 +212,26 @@
       "displayUrl": "repobrowser.com",
       "caption": "(Pre GitHub web editor) Repo Browser is the faster and easier way to browse GitHub Repositories in your browser or on your desktop, complete with images, videos, and other media. Repo Browser also includes the ability to compare against previous commits and traverse any branches a repository might have",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Bootstrap", "color": "#7952b3" },
-        { "name": "MSSQL", "color": "#999999" },
-        { "name": "SCSS", "color": "#cf649a" }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "ASP.NET Core",
+          "color": "#0171c8"
+        },
+        {
+          "name": "Bootstrap",
+          "color": "#7952b3"
+        },
+        {
+          "name": "MSSQL",
+          "color": "#999999"
+        },
+        {
+          "name": "SCSS",
+          "color": "#cf649a"
+        }
       ],
       "features": [
         "Browse public and private repositories",
@@ -158,9 +248,18 @@
       "displayUrl": "cocktails.webpedia.io",
       "caption": "(Cocktails) Webpedia is the first of a hopefully evergrowing collection of informative wikis powered by a generic angular project which can load custom configurations.<br/><br/>Find over 600 cocktail recipies on this site for free on our dynamically generated pages",
       "tags": [
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "Firebase", "color": "#ffca28"  },
-        { "name": "Cloud Functions", "color": "#ff8400"  }
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "Firebase",
+          "color": "#ffca28"
+        },
+        {
+          "name": "Cloud Functions",
+          "color": "#ff8400"
+        }
       ],
       "features": [
         "Generate dynamic pages from a custom configuration json",
@@ -176,31 +275,70 @@
       "name": "McMurtry Automotive",
       "caption": "Created a WPF application to assist with the management and creation of CAD drawings and part files for an innovative automotive company.",
       "tags": [
-        { "name": "Freelance", "color": "#c4105b" },
-        { "name": ".Net Framework", "color": "#0171c8" },
-        { "name": "WPF", "color": "#7a50e0" }
+        {
+          "name": "Freelance",
+          "color": "#c4105b"
+        },
+        {
+          "name": ".Net Framework",
+          "color": "#0171c8"
+        },
+        {
+          "name": "WPF",
+          "color": "#7a50e0"
+        }
       ]
     },
     {
       "name": "NeoGamers",
       "caption": "Laid the foundation for an E-commerce site for trading game items, complete with PayPal integration and content management system.",
       "tags": [
-        { "name": "Freelance", "color": "#c4105b" },
-        { "name": "Angular", "color": "#e52a3a" },
-        { "name": "ASP.NET Core", "color": "#0171c8" },
-        { "name": "Bootstrap", "color": "#7952b3" },
-        { "name": "MSSQL", "color": "#999999" },
-        { "name": "SCSS", "color": "#cf649a" },
-        { "name": "PayPal", "color": "#003087" }
+        {
+          "name": "Freelance",
+          "color": "#c4105b"
+        },
+        {
+          "name": "Angular",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "ASP.NET Core",
+          "color": "#0171c8"
+        },
+        {
+          "name": "Bootstrap",
+          "color": "#7952b3"
+        },
+        {
+          "name": "MSSQL",
+          "color": "#999999"
+        },
+        {
+          "name": "SCSS",
+          "color": "#cf649a"
+        },
+        {
+          "name": "PayPal",
+          "color": "#003087"
+        }
       ]
     },
     {
       "name": "Loddg",
       "caption": "Implemented google maps, restyled header and a number of other components, fixed bugs and improved the performance of their site.",
       "tags": [
-        { "name": "Freelance", "color": "#c4105b" },
-        { "name": "AngularJS", "color": "#e52a3a" },
-        { "name": "Google Maps", "color": "#34a853" }
+        {
+          "name": "Freelance",
+          "color": "#c4105b"
+        },
+        {
+          "name": "AngularJS",
+          "color": "#e52a3a"
+        },
+        {
+          "name": "Google Maps",
+          "color": "#34a853"
+        }
       ]
     }
   ]
