@@ -1,4 +1,5 @@
-<div class="w-screen h-screen md:overflow-y-hidden relative diagonal-stripe hide-scrollbar" [class.scroll-snap]="loaded" id="top-scroll" (scroll)="updateButtons()">
+<div class="w-screen h-screen md:overflow-y-hidden relative diagonal-stripe hide-scrollbar" [class.scroll-snap]="loaded"
+  id="top-scroll" (scroll)="updateButtons()">
 
   <div class="grid grid-cols-1 md:grid-cols-4 h-full z-0">
 
@@ -11,33 +12,42 @@
         </div>
 
         <div class="menu select-none text-xl">
-          <div class="menu-item" [class.selected]="selectedMenuItem === 'projects'" (click)="menuSelect('projects')">PROJECTS</div>
-          <div class="menu-item" [class.selected]="selectedMenuItem === 'other'"  (click)="menuSelect('other')">HONOURABLE MENTIONS</div>
-          <div class="menu-item" [class.selected]="selectedMenuItem === 'about'"  (click)="menuSelect('about')">ABOUT / CONTACT</div>
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'projects'" (click)="menuSelect('projects')">
+            PROJECTS</div>
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'other'" (click)="menuSelect('other')">
+            HONOURABLE MENTIONS</div>
+          <div class="menu-item" [class.selected]="selectedMenuItem === 'about'" (click)="menuSelect('about')">ABOUT /
+            CONTACT</div>
         </div>
 
       </div>
     </div>
 
-    <div *ngIf="selectedMenuItem === 'projects'" [@projectAnimation] class="col-span-3 md:overflow-y-auto select-none" [class.md:scroll-snap]="loaded" id="right-scroll" (scroll)="updateButtons()">
+    <div *ngIf="selectedMenuItem === 'projects'" [@projectAnimation] class="col-span-3 md:overflow-y-auto select-none"
+      [class.md:scroll-snap]="loaded" id="right-scroll" (scroll)="updateButtons()">
 
-        <div *ngFor="let p of projects; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start" [id]="'snap-' + (i + 1)">
-          <a class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="[p.normalisedName]" (click)="projectSelected(i)">
-            <div class="image" [ngStyle]="{'background-image': 'url(/assets/images/' + p.normalisedName + '/home.png)' }"></div>
+      <div *ngFor="let p of projects; let i = index;" class="h-screen flex items-center pt-20 pb-20 snap-start"
+        [id]="'snap-' + (i + 1)">
+        <a class="image-zoom-wrapper h-full cursor-pointer" [routerLink]="[p.normalisedName]"
+          (click)="projectSelected(i)">
+          <div class="image" [ngStyle]="{'background-image': 'url(/assets/images/' + p.normalisedName + '/home.png)' }">
+          </div>
 
-            <h2 class="image-text outline-text">{{p.name}}</h2>
-            <div class="image-button">
-              <span>Showcase</span>
-              <i class="icon-chevron-right ml-2 pt-2 font-bold"></i>
-            </div>
+          <h2 class="image-text outline-text">{{p.name}}</h2>
+          <div class="image-button">
+            <span>Showcase</span>
+            <i class="icon-chevron-right ml-2 pt-2 font-bold"></i>
+          </div>
 
-          </a>
-        </div>
+        </a>
+      </div>
 
     </div>
 
     <div *ngIf="selectedMenuItem === 'other'" class="col-span-3 md:p-20 p-10 snap-start md:overflow-y-auto select-none">
-      <div *ngFor="let op of otherProjects; let i = index;" class="bg-white rounded w-full shadow-lg p-2 hover:bg-gray-50 text-gray-700" [class.rounded-t]="i == 0" [class.rounded-b]="i == otherProjects.length" [class.border-b]="i < otherProjects.length">
+      <div *ngFor="let op of otherProjects; let i = index;"
+        class="bg-white rounded w-full shadow-lg p-2 hover:bg-gray-50 text-gray-700" [class.rounded-t]="i == 0"
+        [class.rounded-b]="i == otherProjects.length" [class.border-b]="i < otherProjects.length">
         <h2 class="font-bold">{{op.name}}</h2>
         <span class="font-mono" [innerHtml]="op.caption"></span>
 
@@ -57,10 +67,12 @@
       <div class="bg-white rounded w-full shadow-lg p-2 hover:bg-gray-50">
         <h2 class="font-bold">My Portfolio</h2>
         <span class="font-mono text-gray-700">
-          This site is a collection of my personal projects.<br/><br/>
-          In the honourable mentions section, you will find freelance projects I have worked on, along with some other projects
-          which didn't quite make the cut.<br/><br/>
-          If you would like to see the source code for this portfolio, you can find it on my <a class="underline" href="https://github.com/OliBlade" target="_blank">GitHub</a>.
+          This site is a collection of my personal projects.<br /><br />
+          In the honourable mentions section, you will find freelance projects I have worked on, along with some other
+          projects
+          which didn't quite make the cut.<br /><br />
+          If you would like to see the source code for this portfolio, you can find it on my <a class="underline"
+            href="https://github.com/OliBlade" target="_blank">GitHub</a>.
         </span>
         <div class="text-right w-full mt-2">
           <a class="text-sm white-button m-1 w-28" href="https://github.com/OliBlade/Portfolio" target="_blank">
@@ -83,9 +95,9 @@
         <a class="text-sm white-button m-1" href="https://www.linkedin.com/in/oliblade/" target="_blank">
           <i class="mr-1 font-bold icon-linkedin2"></i><small>LinkedIn</small>
         </a>
-        <a class="text-sm white-button m-1" href="https://medium.com/@OliBlade" target="_blank">
+        <!-- <a class="text-sm white-button m-1" href="https://medium.com/@OliBlade" target="_blank">
           <i class="mr-1 font-bold icon-pencil"></i><small>Blog</small>
-        </a>
+        </a> -->
       </div>
 
     </div>
@@ -95,7 +107,9 @@
 </div>
 
 <div *ngIf="selectedMenuItem === 'projects'" class="scroll-control md:rounded rounded-r select-none">
-  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()" [disabled]="!isScrollUpEnabled" aria-hidden="true"><i class="icon-chevron-up"></i></button>
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToPreviousSnap()"
+    [disabled]="!isScrollUpEnabled" aria-hidden="true"><i class="icon-chevron-up"></i></button>
   <button class="w-full cursor-default" aria-hidden="true"><i class="icon-menu"></i></button>
-  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()" [disabled]="!isScrollDownEnabled" aria-hidden="true"><i class="icon-chevron-down"></i></button>
+  <button class="w-full hover:bg-gray-50 disabled:opacity-50" (click)="scrollToNextSnap()"
+    [disabled]="!isScrollDownEnabled" aria-hidden="true"><i class="icon-chevron-down"></i></button>
 </div>

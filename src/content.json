@@ -3,7 +3,7 @@
     {
       "name": "BlockScript",
       "normalisedName": "blockscript",
-      "projectUrl": "https://blockscript.app",
+      "projectUrl": "https://datafunctions-8d405.firebaseapp.com/builder",
       "displayUrl": "blockscript.app",
       "caption": "BlockScript is an easy-to-use visual scripting system that lets anyone create cloud functions and software backends quickly and easily. <br/><br/> Users can build and run cloud functions without the ability to code, automating/ scheduling tasks and integrations with explicit detail and customisation unavailable through other systems.",
       "tags": [
@@ -42,6 +42,38 @@
       ]
     },
     {
+      "name": "3-Chess",
+      "normalisedName": "3-chess",
+      "projectUrl": "https://3-chess.com",
+      "displayUrl": "3-chess.com",
+      "caption": "Play three player chess online with friends on web or app.<br/><br/> This site enables users to play three player chess online with friends in real time.",
+      "tags": [
+        {
+          "name": "React",
+          "color": "#61DAFB"
+        },
+        {
+          "name": "React Native",
+          "color": "#61DAFB"
+        },
+        {
+          "name": "Firebase",
+          "color": "#ffca28"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#07B6D5"
+        }
+      ],
+      "features": [
+        "Realtime multiplayer chess",
+        "Website and app on <a class=\"underline\" href=\"https://play.google.com/store/apps/details?id=com.oliblade.threeplayerchess&hl=en_GB\" target=\"_blank\">Google Play</a> and <a class=\"underline\" href=\"https://apps.apple.com/us/app/3chess/id6499236227\" target=\"_blank\">App Store</a>",
+        "Play locally or online",
+        "Valid move detection and plotting with tile highlighting",
+        "Spectatable games"
+      ]
+    },
+    {
       "name": "Dashifi",
       "normalisedName": "dashifi",
       "projectUrl": "https://dashifi-5490e.web.app",
@@ -77,7 +109,7 @@
         "Realtime monitoring of connections",
         "Realtime updates of connected Dashboards",
         "Premium features with stripe",
-        "<a class=\"underline\" href=\"https://blockscript.app\" target=\"_blank\">BlockScript</a> integration for easy no-code updates",
+        "<a class=\"underline\" href=\"https://datafunctions-8d405.firebaseapp.com/builder\" target=\"_blank\">BlockScript</a> integration for easy no-code updates",
         "Full Documentation at <a class=\"underline\" href=\"https://dashifi-docs.web.app\" target=\"_blank\">https://dashifi-docs.web.app</a>"
       ]
     },
@@ -127,38 +159,11 @@
       ]
     },
     {
-      "name": "3-Chess",
-      "normalisedName": "3-chess",
-      "projectUrl": "https://3-chess.com",
-      "displayUrl": "3-chess.com",
-      "caption": "Play three player chess online with friends.<br/><br/> This site enables users to play three player chess online with friends in real time.",
-      "tags": [
-        {
-          "name": "React",
-          "color": "#61DAFB"
-        },
-        {
-          "name": "Firebase",
-          "color": "#ffca28"
-        },
-        {
-          "name": "Tailwind",
-          "color": "#07B6D5"
-        }
-      ],
-      "features": [
-        "Realtime multiplayer chess",
-        "Play locally or online",
-        "Valid move detection and plotting with tile highlighting",
-        "Spectatable games"
-      ]
-    },
-    {
       "name": "Docs",
       "normalisedName": "docs",
-      "projectUrl": "https://docs.blockscript.app",
-      "displayUrl": "docs.blockscript.app",
-      "caption": "The docs project was created as a generic documentation template for other projects such as <a class=\"underline\" target=\"_blank\" href=\"https://docs.blockscript.app\">BlockScript</a>, <a class=\"underline\" target=\"_blank\" href=\"https://docs.3cols.com\">3Cols</a> and <a class=\"underline\" target=\"_blank\" href=\"https://dashifi-docs.web.app\">Dashifi</a>. <br/><br/> This site uses Gulp + Angular Universal to dynamically build markdown pages into prerendered HTML pages, fully automated with GitHub Actions.",
+      "projectUrl": "https://docs.3cols.app",
+      "displayUrl": "docs.3cols.app",
+      "caption": "The docs project was created as a generic documentation template for other projects such as <a class=\"underline\" target=\"_blank\" href=\"https://datafunctions-docs.web.app\">BlockScript</a>, <a class=\"underline\" target=\"_blank\" href=\"https://docs.3cols.com\">3Cols</a> and <a class=\"underline\" target=\"_blank\" href=\"https://dashifi-docs.web.app\">Dashifi</a>. <br/><br/> This site uses Gulp + Angular Universal to dynamically build markdown pages into prerendered HTML pages, fully automated with GitHub Actions.",
       "tags": [
         {
           "name": "Angular",
@@ -239,34 +244,6 @@
         "Open multiple tabs",
         "Sign in via GitHub to retrieve your own repositories",
         "Display images, videos, and other media"
-      ]
-    },
-    {
-      "name": "Webpedia",
-      "normalisedName": "webpedia",
-      "projectUrl": "https://cocktails.webpedia.io/",
-      "displayUrl": "cocktails.webpedia.io",
-      "caption": "(Cocktails) Webpedia is the first of a hopefully evergrowing collection of informative wikis powered by a generic angular project which can load custom configurations.<br/><br/>Find over 600 cocktail recipies on this site for free on our dynamically generated pages",
-      "tags": [
-        {
-          "name": "Angular",
-          "color": "#e52a3a"
-        },
-        {
-          "name": "Firebase",
-          "color": "#ffca28"
-        },
-        {
-          "name": "Cloud Functions",
-          "color": "#ff8400"
-        }
-      ],
-      "features": [
-        "Generate dynamic pages from a custom configuration json",
-        "Server Side Rendering with angular universal and cloud functions",
-        "Omnisearch across pages (cocktails and ingredients)",
-        "PWA allowing install on desktop/ android",
-        "Mobile friendly"
       ]
     }
   ],
